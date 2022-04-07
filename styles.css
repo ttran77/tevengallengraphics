@@ -1,0 +1,363 @@
+/* PERSONAL HOMEPAGE */
+
+
+
+/* COLOR VARIABLES
+----------------------------------------------- */
+:root {
+  --dark: #FFFFFF;
+  --light: #000000;
+  --mid: #61913C;
+}
+
+
+
+
+/* BASE STYLES
+----------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://w.wallhaven.cc/full/28/wallhaven-286kyy.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh; 
+  line-height: 1.3;
+  font-size: 1em;
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+#main {
+  background: transparent;
+  width: 100%;
+  height: 50px;
+}
+
+
+#main .logo {
+  float: left;
+}
+
+.logo {
+   width: 150px;
+   height: 150px;
+   background-position: center;
+   background-size: cover;
+   margin-left: 40px;
+   margin-top: -25px;
+
+}
+
+
+
+
+
+.button {
+  border: 2px solid;
+  border-radius: 0.05em;
+  padding: 0.25em 1em;
+  text-transform: uppercase;
+  text-decoration: none:
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-gap:0.05em;
+  align-items: center;
+  transition: all 0.25s;
+  color: black;
+  background-color: #4caf50;
+  
+
+}
+
+
+.button:hover {
+  backround: var(--dark);
+  border-color: var(--dark)
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+/* TYPOGRAPHY
+----------------------------------------------- */
+a {
+  text-decoration: none;
+      font-weight: bold;
+    color: whitesmoke;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+h1 {
+
+
+font-family: 'Manrope', sans-serif;
+font-weight: 700;
+font-size: 2.5em;
+letter-spacing: -0.05em;
+margin: 0 0 1em 0;
+margin-right: auto;
+margin-left: auto;
+line-height: 1.4;
+max-width: 36em;
+padding: 10px;
+color: #61913C;
+  
+
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  border-bottom: 2px solid var(--light);
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em; ;
+  filter: drop-shadow(5px 8px 6px #d8ffd5);
+  color: #000000;
+}
+
+
+h3 {
+  font-size: 150px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+  color: #064412;
+  -webkit-text-stroke: 0.3vw #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+h3::before
+{
+  font-family: 'Manrope', sans-serif;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%
+  height: 100%;
+  color: #000000;
+  -webkit-text-stroke: 0vw #053e10;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animation 1s linear infinite;
+}
+
+@keyframes animation
+{ 
+  0%,10%100%
+
+ {
+  width: 0;
+ }
+ 70%,90%
+ {
+  width: 100%;
+ }
+}
+
+
+
+
+
+
+
+}
+
+
+
+p {
+    
+  font-style: normal;
+  font-family: 'Manrope', sans-serif;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+  line-height: 1.3;
+  max-width: 36em;
+  padding: 10px;
+  color: #000000;
+  max-width: 36em;
+  padding: 10px;
+  
+  color: #000000;
+}
+
+i {
+  float: right;
+  word-spacing: 2em;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+
+}
+
+
+
+b {
+  font-style: normal;
+  font-family: 'Manrope', sans-serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+  line-height: 1.9;
+  max-width: 36em;
+  padding: 10px;
+  color: #000000;
+  max-width: 36em;
+  padding: 10px;
+  
+  color: #000000;
+
+}
+
+
+
+
+
+
+
+
+
+/* HEADER
+----------------------------------------------- */
+header {
+  font-family: 'Manrope', sans-serif;
+  background: var(--mid);
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  word-spacing: 2em;
+  background-image: url(https://media4.giphy.com/media/1H8sdPP3JDAR5iY0Yv/giphy.gif?cid=ecf05e47dynxuzopl7suz38afodg0njm851a5n9dqbkz22ux&rid=giphy.gif&ct=g);
+  background-position: center;
+
+}
+
+
+
+ 
+
+nav {
+   text-align: right; 
+  cursor: pointer;
+  grid-row-start: 1;
+  grid-column-end: -1;
+  font-weight: 400;
+  color: #000000;
+}
+
+
+
+.nav-active nav {
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+ 
+  grid-template-columns: auto;
+  grid-column-gap: 0.25em;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.grid-item {
+  
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+
+
+/* MAIN
+----------------------------------------------- */
+main {
+  
+
+}
+section {
+  padding: 10vh 0.5em;
+}
+
+
+
+
+/* FOOTER
+----------------------------------------------- */
+footer {
+  padding: 0.5em;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES
+----------------------------------------------- */
+@media (min-width: 960px) {
+  
+  body {
+    font-size: 2em;
+  }
+
+}
+
+
+@media (min-width: 1440px) {
+  
+  body {
+    font-size: 3em;
+  }
+
+}
+
